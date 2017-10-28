@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+<body>
+	<div class="container">	
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div id="title" class="boxed">
+					<div class="h1 text-center">
+						Crystal Collector
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-xs-0"></div>
+			<div class="col-md-8 col-xs-12">
+				<!-- Instructions -->
+				<div id="instructions" class="boxed h4">
+					<div class="panel panel-default">
+						<div class="panel-heading">Instructions</div>
+						<div class="panel-body">Each crystal is worth an unknown amount until you take one. The red, the blue, the green, and the clear. They are all worth something different each round. <br><br>
+							Beware! Don't take too many. Enjoy!
+							<hr>
+							Begin by clicking on a crystal.
+
+						</div>
+					</div>
+				</div>
+				<!-- Win/Fail states -->
+				<div id="story" class="panel panel-default h4">
+					<div class="panel-heading">Story</div>
+					<div class="panel-body"><span id="result"></span></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 col-xs-0"></div>
+			<div class="col-md-8 col-xs-12">
+				<div class="text-center h2">
+					<div>
+						<p>You may take exactly <span id="number-to-guess" class="boxed"></span> crystals</p>
+					</div>
+				</div>
+				<hr>
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div class="text-center">
+					<div id="gem-buttons" class="boxed">
+						<img src="assets/images/blue-gem.png" id="blue-gem" class="gem-buttons">
+						<img src="assets/images/clear-gem.png" id="clear-gem" class="gem-buttons">
+						<img src="assets/images/red-gem.png" id="red-gem" class="gem-buttons">
+						<img src="assets/images/green-gem.png" id="green-gem" class="gem-buttons">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-xs-12">
+				<div class="text-center">
+					<div id="score" class="boxed h2">
+						Your Crystals: <span id="display"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="text-center h2">
+					<div id="wins-losses" class="boxed">
+						<p>Wins: <span id="wins"></span></p>
+						<p>Losses: <span id="losses"></span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
